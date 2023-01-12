@@ -7,10 +7,10 @@ variable "AWS_REGION" {
 
 variable "name" {
     description = "The name of the instance we are creating"
-    default = "web"
+    default = "hello"
 }
 
 variable "group" {
     description= "the name of the group we will be using for Ansible purposes"
-    default = "devops-project"
+    default = "web"
 }
