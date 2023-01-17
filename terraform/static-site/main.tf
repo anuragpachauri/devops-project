@@ -8,8 +8,9 @@ provider "aws" {
 resource "aws_instance" "site" {
     ami = "ami-0f69bc5520884278e"
     instance_type="t2.micro"
-    key_name="terraform-key"
-    vpc_security_group_ids = ["sg-0e52a025ddf2cbc05"]
+    key_name="anurag"
+    subnet_id = "subnet-06d5d1e047ff02f83"
+    vpc_security_group_ids = ["sg-04ec6643f9f06e221"]
         tags = {
             Name = var.name
             group = var.group
